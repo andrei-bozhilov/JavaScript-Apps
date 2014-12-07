@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Slideshow</title>
+    <script src="../../Scripts/jquery-2.1.1.min.js"></script>
+    <script src="slider.js"></script>
+    <style>
+        div#slideshow {
+            width: 1000px;
+            margin:0 auto;
+            position: relative;
+            border: 1px solid red;
+            padding:0 50px 0 50px;
+        }
+
+        button#left, button#right {
+            position: absolute;
+            top: 50%;
+        }
+
+        button#right {
+            right: 10px;
+        }
+
+        button#left {
+            left: 10px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        section{
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slideshow">
+        <button id="left">Left</button>
+        <section class="active">
+            <p>
+                <h1>Section 1</h1>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nesciunt, ex ad dolore distinctio quod hic? Dignissimos, ipsam, qui aperiam et illum corporis quaerat suscipit iusto tenetur aut asperiores ullam.</div>
+            </p>
+        </section>
+        <section class="hide">
+            <p>
+                <h1>Section 2</h1>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nesciunt, ex ad dolore distinctio quod hic? Dignissimos, ipsam, qui aperiam et illum corporis quaerat suscipit iusto tenetur aut asperiores ullam.</div>
+            </p>
+        </section>
+        <section class="hide">
+            <p>
+                <h1>Section 3</h1>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nesciunt, ex ad dolore distinctio quod hic? Dignissimos, ipsam, qui aperiam et illum corporis quaerat suscipit iusto tenetur aut asperiores ullam.</div>
+            </p>
+        </section>
+        <button id="right">Right</button>
+
+</body>
+</html>
